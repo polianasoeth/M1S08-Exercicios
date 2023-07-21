@@ -13,16 +13,16 @@ function fazerReserva(event) {
             "terminoReserva": valorCampos[4]
         }
         fetch('http://localhost:3000/reservas', {
-            method: 'POST', 
+            method: 'POST',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(reserva)
         })
-    } else {
-        event.preventDefault()
+        location.href = "home.html"
     }
+    event.preventDefault()
 }
 function verificarCampoPreenchido(idCampo) {
     const elemento = document.getElementById(idCampo)

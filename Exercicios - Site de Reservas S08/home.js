@@ -1,4 +1,5 @@
 document.querySelector('#logout').onclick = () => location.href = "login.html"
+document.querySelector('#cadastrar').onclick = () => location.href = "formulario.html"
 
 // Função para gerar a tabela
 function buscarReservas() {
